@@ -1,0 +1,17 @@
+{
+    "name": "fs-angular-import",
+    "description": "",
+    "main": [
+        "dist/import.js",
+        "dist/import.css"
+    ],
+    "authors": [
+        "Firestitch Inc."
+    ],
+    "license": "MIT",
+    "ignore": [
+        "src",
+        ".gitignore"
+    ],
+    "private": false
+}
