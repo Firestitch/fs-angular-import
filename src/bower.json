@@ -1,7 +1,7 @@
 {
     "name": "fs-angular-import",
     "namespace": "import",
-    "port": 5052,
+    "port": 5053,
     "moduleName": "app",
     "version": "0.0.0",
     "appPath": "app",
@@ -9,7 +9,9 @@
         "angular": "1.6.3",
         "angular-material": "1.1.1",
         "angular-ui-router": "0.3.2",
-        "fs-boilerplate-styles": "^1.0.0"
+        "fs-boilerplate-styles": "^1.0.0",
+        "fs-angular-lister": "^1.0.0",
+        "fs-angular-alert": "^1.0.0"
     },
     "resolutions": {
         "angular": "1.6.3"

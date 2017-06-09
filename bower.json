@@ -5,6 +5,10 @@
         "dist/import.js",
         "dist/import.css"
     ],
+    "dependencies": {
+        "fs-angular-lister": "^1.0.0",
+        "fs-angular-alert": "^1.0.0"
+    },
     "authors": [
         "Firestitch Inc."
     ],
