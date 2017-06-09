@@ -68,7 +68,7 @@
 							value: '{{data.preview}}'
 						},
 						{
-							title: 'Message',
+							title: 'Reason',
 							value: '<div ng-repeat="message in data.messages">{{message}}</div>'
 						}
 					]
@@ -87,7 +87,7 @@ angular.module('fs-angular-import').run(['$templateCache', function($templateCac
 
 
   $templateCache.put('views/directives/importresult.html',
-    "<fs-alert fs-type=\"success\" ng-show=\"result.success.count\"><div ng-hide=\"result.success.message\">{{result.success.count}} Successfully imported</div><div ng-show=\"result.success.message\">{{result.success.message}}</div></fs-alert><fs-alert fs-type=\"info\" ng-show=\"result.duplicate.count\"><div ng-hide=\"result.duplicate.message\">Ignored {{result.duplicate.count}}<ng-pluralize count=\"result.duplicate.count\" when=\"{ one: 'duplicate', other: 'duplicates' }\"></ng-pluralize></div><div ng-show=\"result.duplicate.message\">{{result.duplicate.message}}</div></fs-alert><fs-alert fs-type=\"error\" ng-show=\"result.fail.count\"><div ng-hide=\"result.fail.message\">{{result.fail.count}} failed to import</div><div ng-show=\"result.fail.message\">{{result.fail.message}}</div></fs-alert><div ng-show=\"result.messages.length\"><fs-lister ls-options=\"lsOptions\"></fs-lister></div>"
+    "<fs-alert fs-type=\"success\" ng-show=\"result.success.count\"><div ng-hide=\"result.success.message\">{{result.success.count}} Successfully imported</div><div ng-show=\"result.success.message\">{{result.success.message}}</div></fs-alert><fs-alert fs-type=\"info\" ng-show=\"result.duplicate.count\"><div ng-hide=\"result.duplicate.message\">{{result.duplicate.count}} <span><ng-pluralize count=\"result.duplicate.count\" when=\"{ one: 'Duplicate', other: 'Duplicates' }\"></ng-pluralize></span> ignored</div><div ng-show=\"result.duplicate.message\">{{result.duplicate.message}}</div></fs-alert><fs-alert fs-type=\"error\" ng-show=\"result.fail.count\"><div ng-hide=\"result.fail.message\">{{result.fail.count}} Failed to import</div><div ng-show=\"result.fail.message\">{{result.fail.message}}</div></fs-alert><div ng-show=\"result.messages.length\"><fs-lister ls-options=\"lsOptions\"></fs-lister></div>"
   );
 
 }]);

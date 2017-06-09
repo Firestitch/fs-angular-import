@@ -67,7 +67,7 @@
 							value: '{{data.preview}}'
 						},
 						{
-							title: 'Message',
+							title: 'Reason',
 							value: '<div ng-repeat="message in data.messages">{{message}}</div>'
 						}
 					]

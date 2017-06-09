@@ -6,13 +6,13 @@
 </fs-alert>
 <fs-alert fs-type="info" ng-show="result.duplicate.count">
 	<div ng-hide="result.duplicate.message">
-		Ignored {{result.duplicate.count}} <ng-pluralize count="result.duplicate.count" when="{ one: 'duplicate', other: 'duplicates' }"></ng-pluralize>
+		{{result.duplicate.count}} <span><ng-pluralize count="result.duplicate.count" when="{ one: 'Duplicate', other: 'Duplicates' }"></ng-pluralize></span> ignored
 	</div>
 	<div ng-show="result.duplicate.message">{{result.duplicate.message}}</div>
 </fs-alert>
 <fs-alert fs-type="error" ng-show="result.fail.count">
 	<div ng-hide="result.fail.message">
-		{{result.fail.count}} failed to import
+		{{result.fail.count}} Failed to import
 	</div>
 	<div ng-show="result.fail.message">{{result.fail.message}}</div>
 </fs-alert>
