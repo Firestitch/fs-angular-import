@@ -32,7 +32,7 @@
 						},
 						{
 							title: 'Validations',
-							value: '<div ng-repeat="(key,value) in data.validations" ng-hide="key==\'required\'">Vaild {{key}}</div>'
+							value: '<div ng-repeat="(key,value) in data.validations" ng-hide="key==\'required\'">Valid {{key}}</div>'
 						}
 					]
 				}
