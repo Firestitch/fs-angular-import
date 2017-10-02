@@ -22,7 +22,7 @@
 					columns: [
 						{
 							title: 'Name',
-							value: '{{data.name}}'
+							value: '{{data.name}} <div class="description">{{data.description}}</div>'
 						},
 						{
 							title: 'Required',
@@ -31,7 +31,10 @@
 						},
 						{
 							title: 'Validations',
-							value: '<div ng-repeat="(key,value) in data.validations" ng-hide="key==\'required\'">Valid {{key}}</div>'
+							value: '<div ng-repeat="(key,value) in data.validations" ng-hide="key==\'required\'">\
+									<span ng-if="key==\'values\'">Valid values: {{value.join(", ")}}</span>\
+									<span ng-if="key!=\'values\'">Valid {{key}}</span>\
+									</div>'
 						}
 					]
 				}
